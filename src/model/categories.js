@@ -1,4 +1,4 @@
-const db = require("../database/db.js");
+const db = require('../database/db.js');
 
 module.exports = { listCategories };
 
@@ -7,5 +7,5 @@ const select_categories = db.prepare(/*sql*/ `
 `);
 
 function listCategories() {
-  return select_categories.all();
+	return select_categories.all();
 }
